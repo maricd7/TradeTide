@@ -3,7 +3,7 @@ import Logo from "../ui/Logo/Logo";
 
 const Nav = () => {
   return (
-    <nav className="flex justify-between my-4 mx-16">
+    <nav className="flex justify-between my-4 mx-16 sticky">
       <Logo />
       <ul className="flex gap-8">
         <li>About us</li>

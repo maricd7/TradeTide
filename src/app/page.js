@@ -9,10 +9,12 @@ export default function Home() {
   return (
     <main className="mx-16 h-screen flex items-center">
       <div className="flex flex-col justify-between w-full gap-16 ">
-        <div className="flex flex-col gap-8 w-fit">
+        <div className="flex flex-col gap-8 ">
           <MainHeading text="TradeTide" />
           <Paragraph />
-          <Button />
+          <div className="w-1/4">
+            <Button text="Try Now" />
+          </div>
         </div>
         {/* <HeroImageGrid /> */}
         <BenefitsSection />
