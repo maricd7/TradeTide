@@ -1,0 +1,11 @@
+.benefitsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.subHeading {
+  font-size: 2rem;
+}
+.benefitsRow {
+  display: flex;
+}

@@ -1,7 +1,5 @@
-import Image from "next/image";
 import { MainHeading } from "./components/ui/MainHeading";
 import { Paragraph } from "./components/ui/Paragraph";
-import HeroImageGrid from "./components/HeroImageGrid/HeroImageGrid";
 import Button from "./components/ui/Button/Button";
 import BenefitsSection from "./components/BenefitsSection/BenefitsSection";
 

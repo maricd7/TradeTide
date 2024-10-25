@@ -1,10 +1,10 @@
 import React from "react";
-
+import styles from "./BeneftisSection.module.css";
 const BenefitsSection = () => {
   return (
-    <div className="flex flex-col gap-8">
-      <h2 className="text-3xl font-bold">Why TradeTide ? </h2>
-      <div className="flex gap-8">
+    <div className={styles.benefitsContainer}>
+      <h2 className={styles.subHeading}>Why TradeTide ? </h2>
+      <div className={styles.benefitsRow}>
         <div className="flex flex-col gap-4">
           <h3 className="text-2xl font-bold">
             Boost <span className="text-green-500">Efficiency</span>

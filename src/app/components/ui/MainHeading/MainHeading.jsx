@@ -1,7 +1,10 @@
+//component for rendering  h1 main heading of the app
+
 import React from "react";
+import styles from "./MainHeading.module.css";
 
 const MainHeading = ({ text }) => {
-  return <h1 className="text-8xl font-bold w-fit">{text}</h1>;
+  return <h1 className={styles.mainHeading}>{text}</h1>;
 };
 
 export default MainHeading;
