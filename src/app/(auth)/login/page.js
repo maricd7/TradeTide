@@ -1,6 +1,6 @@
 import React from "react";
-import Button from "../components/ui/Button/Button";
 import Link from "next/link";
+import Button from "@/app/components/ui/Button/Button";
 
 const LoginPage = () => {
   return (

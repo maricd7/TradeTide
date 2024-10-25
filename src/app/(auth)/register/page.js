@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import Button from "../components/ui/Button/Button";
 import Link from "next/link";
-import { registerUser } from "../actions/register/RegisterUser";
+import { registerUser } from "../actions/register/registerUser";
 
 const RegisterPage = () => {
   const [email, setEmail] = useState("");
