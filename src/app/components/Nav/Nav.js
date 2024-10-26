@@ -1,11 +1,11 @@
 import React from "react";
 import Logo from "../ui/Logo/Logo";
-
+import styles from "./Nav.module.css";
 const Nav = () => {
   return (
-    <nav className="flex justify-between my-4 mx-16 sticky">
+    <nav className={styles.navbar}>
       <Logo />
-      <ul className="flex gap-8">
+      <ul className={styles.navbarList}>
         <li>About us</li>
         <li>Register</li>
         <li>Login</li>

@@ -1,0 +1,7 @@
+.primaryButton {
+  padding: 0.75rem 2rem;
+  background-color: #39db7d;
+  border-radius: 0.75rem;
+  border: 0;
+  font-weight: 600;
+}
