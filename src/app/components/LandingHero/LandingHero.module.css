@@ -3,5 +3,10 @@
   height: 100vh;
   justify-content: center;
   align-items: center;
-  margin: 2rem;
+  margin: 0 2rem;
+}
+.heroInfoContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
 }

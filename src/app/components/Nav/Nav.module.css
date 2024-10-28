@@ -2,9 +2,13 @@
   display: flex;
   justify-content: space-between;
   padding: 1rem 2rem;
+  /* position: fixed; */
+  /* width: 100%; */
 }
 .navbarList {
   list-style: none;
   display: flex;
   gap: 1rem;
+  justify-content: center;
+  align-items: center;
 }
