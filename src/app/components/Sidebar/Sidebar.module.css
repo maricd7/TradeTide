@@ -1,0 +1,24 @@
+.sidebarContainer {
+  display: flex;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: white;
+  height: 100%;
+  flex-direction: column;
+  padding: 1rem;
+}
+.sidebarList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  justify-content: left;
+  align-items: start;
+  padding: 0;
+}
+.sidebarListElement {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
