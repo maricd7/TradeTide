@@ -4,6 +4,7 @@ import React from "react";
 import Logo from "../ui/Logo/Logo";
 import { Icon } from "@iconify/react";
 import styles from "./Sidebar.module.css";
+import { LogoutButton } from "../ui";
 
 const Sidebar = () => {
   return (
@@ -47,6 +48,7 @@ const Sidebar = () => {
           Orders
         </li>
       </ul>
+      <LogoutButton />
     </aside>
   );
 };
