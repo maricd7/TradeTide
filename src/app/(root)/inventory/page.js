@@ -2,7 +2,7 @@ import AllProductContainer from "@/app/components/AllProductContainer/AllProduct
 import React from "react";
 
 const InventoryPage = () => {
-  return <div>{<AllProductContainer />}</div>;
+  return <>{<AllProductContainer />}</>;
 };
 
 export default InventoryPage;
