@@ -1,8 +1,9 @@
 import React from "react";
 import Link from "next/link";
 import Button from "@/app/components/ui/Button/Button";
-
+i;
 const LoginPage = () => {
+  const handleSubmit = () => {};
   return (
     <div className="flex h-screen justify-center items-center">
       <form className="bg-gray-100 px-8 py-8 rounded-lg flex flex-col gap-8 w-fit h-fit">
