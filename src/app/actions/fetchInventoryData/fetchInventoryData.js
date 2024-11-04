@@ -1,3 +1,5 @@
+"use server";
+
 import { supabase } from "@/app/supabase";
 
 //server action for fetching products data on server side

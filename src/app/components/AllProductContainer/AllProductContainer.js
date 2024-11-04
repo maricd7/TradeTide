@@ -30,6 +30,7 @@ const AllProductContainer = () => {
       <MainHeading text="Inventory" />
       {products.map((product) => (
         <InventoryProduct
+          key={product.id}
           name={product.product_name}
           price={product.product_price}
           description={product.product_description}
