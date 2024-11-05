@@ -12,7 +12,9 @@ const AuthContext = createContext({
 
 export const AuthContextProvider = ({ children }) => {
   const [login, setLogin] = useState(false);
-  const [currentUser, setCurrentUser] = useState(null);
+  const [currentUser, setCurrentUser] = useState(
+    window.sessionStorage.getItem("currentUser") || ""
+  );
   const router = useRouter();
 
   useEffect(() => {
@@ -42,7 +44,8 @@ export const AuthContextProvider = ({ children }) => {
       console.error("Error logging in:", error.message);
       return;
     }
-    if (data) {
+    if (data.user) {
+      window.sessionStorage.setItem("currentUser", data.user);
       setCurrentUser(data.user);
       setLogin(true);
       router.push("/");

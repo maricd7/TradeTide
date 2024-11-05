@@ -1,12 +1,16 @@
 //component for rendering sidebar element
-
+"use client";
 import React from "react";
 import Logo from "../ui/Logo/Logo";
 import { Icon } from "@iconify/react";
 import styles from "./Sidebar.module.css";
 import { LogoutButton } from "../ui";
+import { useAuthContext } from "@/app/contexts/AuthContext";
 
 const Sidebar = () => {
+  const { currentUser } = useAuthContext();
+
+  !currentUser ? <div>Skrr</div> : <h2>dsa</h2>;
   return (
     <aside className={styles.sidebarContainer}>
       <Logo />
@@ -48,6 +52,7 @@ const Sidebar = () => {
           Orders
         </li>
       </ul>
+      <div>{currentUser.email}</div>
       <LogoutButton />
     </aside>
   );

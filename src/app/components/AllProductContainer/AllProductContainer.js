@@ -10,15 +10,15 @@ import { useAuthContext } from "@/app/contexts/AuthContext";
 
 const AllProductContainer = () => {
   const [products, setProducts] = useState([]);
-  const user = useAuthContext();
+  const { currentUser } = useAuthContext();
+
   useEffect(() => {
     const fetchData = async () => {
       const data = await fetchInventoryData();
       setProducts(data);
     };
     fetchData();
-    console.log(user, "user");
-  }, []);
+  }, [currentUser]);
 
   // Check if products array is empty
   if (products.length === 0) {
@@ -36,6 +36,7 @@ const AllProductContainer = () => {
           description={product.product_description}
         />
       ))}
+      {/* <div>{currentUser}</div> */}
     </div>
   );
 };
