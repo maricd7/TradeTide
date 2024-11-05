@@ -7,7 +7,7 @@ import { useAuthContext } from "@/app/contexts/AuthContext";
 
 const Nav = () => {
   const { currentUser } = useAuthContext();
-  console.log(currentUser);
+
   return (
     <nav className={styles.navbar}>
       <Logo />

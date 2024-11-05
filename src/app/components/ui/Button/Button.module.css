@@ -1,7 +1,9 @@
 .primaryButton {
   padding: 0.75rem 2rem;
-  background-color: #39db7d;
+  background: linear-gradient(90deg, #00c9ff 0%, #39db7d 100%);
+  color: white;
   border-radius: 0.75rem;
   border: 0;
   font-weight: 600;
+  cursor: pointer;
 }

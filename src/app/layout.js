@@ -2,6 +2,7 @@ import "./globals.css";
 import { GeistSans } from "geist/font/sans";
 import { GeistMono } from "geist/font/mono";
 import { AuthContextProvider } from "./contexts/AuthContext";
+import Nav from "./components/Nav/Nav";
 
 export const metadata = {
   title: "TradeTide",
@@ -12,7 +13,10 @@ export default function RootLayout({ children }) {
   return (
     <html className={GeistSans.className} lang="en">
       <AuthContextProvider>
-        <body>{children}</body>
+        <body>
+          <Nav />
+          {children}
+        </body>
       </AuthContextProvider>
     </html>
   );
