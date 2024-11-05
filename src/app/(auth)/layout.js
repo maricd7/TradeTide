@@ -1,5 +1,3 @@
-import localFont from "next/font/local";
-// import "./globals.css";
 import Nav from "../components/Nav/Nav";
 
 export const metadata = {
@@ -9,11 +7,9 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body>
-        <Nav />
-        {children}
-      </body>
-    </html>
+    <body>
+      <Nav />
+      {children}
+    </body>
   );
 }

@@ -2,11 +2,9 @@ import Sidebar from "../components/Sidebar/Sidebar";
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body>
-        <Sidebar />
-        {children}
-      </body>
-    </html>
+    <body>
+      <Sidebar />
+      {children}
+    </body>
   );
 }
