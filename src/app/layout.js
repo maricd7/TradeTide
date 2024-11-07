@@ -13,10 +13,7 @@ export default function RootLayout({ children }) {
   return (
     <html className={GeistSans.className} lang="en">
       <AuthContextProvider>
-        <body>
-          <Nav />
-          {children}
-        </body>
+        <body>{children}</body>
       </AuthContextProvider>
     </html>
   );
